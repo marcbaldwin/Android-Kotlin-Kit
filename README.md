@@ -21,6 +21,14 @@ dependencies {
 }
 ```
 
+### Display
+
+```kotlin
+val dpInPixels = 16.dpToPixels(context)
+
+val spInPixels = 20.spToPixels(context)
+```
+
 ### CustomViewPager
 
 A `ViewPager` that allows you to disable swiping between pages

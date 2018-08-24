@@ -7,7 +7,7 @@ fun AlertDialog.Builder.setItems(vararg items: Pair<Int, () -> Unit>): AlertDial
 }
 
 fun AlertDialog.Builder.setItems(items: List<Pair<Int, () -> Unit>>): AlertDialog.Builder {
-    val ids = items.map({ (id, _) -> context.getString(id) }).toTypedArray()
+    val ids = items.map { (id, _) -> context.getString(id) }.toTypedArray()
     return setItems(ids) { _, index ->
         items[index].second.invoke()
     }

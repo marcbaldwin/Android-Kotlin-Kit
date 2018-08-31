@@ -1,6 +1,5 @@
 buildscript {
-    ext.kotlin_version = '1.2.60'
-    ext.android_support_version = '27.1.1'
+    ext.kotlin_version = '1.2.61'
 
     repositories {
         google()
@@ -15,8 +14,7 @@ buildscript {
 
 ext {
     minSdkVersion = 14
-    targetSdkVersion = 25
-    compileSdkVersion = 27
+    compileSdkVersion = 28
 }
 
 allprojects {

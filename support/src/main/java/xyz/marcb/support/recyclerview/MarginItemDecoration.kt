@@ -2,8 +2,8 @@ package xyz.marcb.support.recyclerview
 
 import android.content.Context
 import android.graphics.Rect
-import android.support.v7.widget.RecyclerView
 import android.view.View
+import androidx.recyclerview.widget.RecyclerView
 import xyz.marcb.support.dpToPixels
 
 open class MarginItemDecoration(
@@ -22,7 +22,7 @@ open class MarginItemDecoration(
     override fun getItemOffsets(outRect: Rect, view: View, parent: RecyclerView, state: RecyclerView.State) {
         val position = parent.getChildLayoutPosition(view)
 
-        val itemCount = parent.adapter.itemCount
+        val itemCount = parent.adapter?.itemCount ?: 0
 
         if (direction == Direction.HORIZONTAL) {
             outRect.top = verticalSpacing.dpToPixels(context)

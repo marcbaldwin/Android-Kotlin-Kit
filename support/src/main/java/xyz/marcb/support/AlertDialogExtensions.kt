@@ -1,6 +1,6 @@
 package xyz.marcb.support
 
-import android.support.v7.app.AlertDialog
+import androidx.appcompat.app.AlertDialog
 
 fun AlertDialog.Builder.setItems(vararg items: Pair<Int, () -> Unit>): AlertDialog.Builder {
     return setItems(listOf(*items))

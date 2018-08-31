@@ -1,7 +1,7 @@
 package xyz.marcb.constraint
 
-import android.support.constraint.ConstraintLayout
-import android.support.constraint.ConstraintSet
+import androidx.constraintlayout.widget.ConstraintLayout
+import androidx.constraintlayout.widget.ConstraintSet
 
 inline fun ConstraintLayout.applyConstraints(handler: ConstraintSet.() -> Unit) {
     val constraintSet = ConstraintSet()
